@@ -1,0 +1,1 @@
+include ':app', ':common_data', ':dummy_data_provider'
