@@ -27,6 +27,7 @@ class SkillsListAdapter extends RecyclerView.Adapter<SkillViewHolder> {
     public SkillViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.viewholder_skill, parent, false);
         SkillViewHolder viewHolder = new SkillViewHolder(view);
+        //ToDo Could inject a provider of the click listener instead.
         viewHolder.getSkillName().setOnClickListener(new OnShowSkillClickListener(router));
         return viewHolder;
     }

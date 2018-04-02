@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MonsterHunterWorldDatabase.iml" filepath="$PROJECT_DIR$/MonsterHunterWorldDatabase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MHWorldDatabase.iml" filepath="$PROJECT_DIR$/.idea/MHWorldDatabase.iml" />
+      <module fileurl="file://C:\Users\can\AndroidStudioProjects\MHWorldDatabase\MonsterHunterWorldDatabase.iml" filepath="C:\Users\can\AndroidStudioProjects\MHWorldDatabase\MonsterHunterWorldDatabase.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\can\AndroidStudioProjects\MHWorldDatabase\app\app.iml" filepath="C:\Users\can\AndroidStudioProjects\MHWorldDatabase\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/common_data/common_data.iml" filepath="$PROJECT_DIR$/common_data/common_data.iml" />
+      <module fileurl="file://C:\Users\can\AndroidStudioProjects\MHWorldDatabase\common_data\common_data.iml" filepath="C:\Users\can\AndroidStudioProjects\MHWorldDatabase\common_data\common_data.iml" />
       <module fileurl="file://$PROJECT_DIR$/dummy_data_provider/dummy_data_provider.iml" filepath="$PROJECT_DIR$/dummy_data_provider/dummy_data_provider.iml" />
+      <module fileurl="file://C:\Users\can\AndroidStudioProjects\MHWorldDatabase\dummy_data_provider\dummy_data_provider.iml" filepath="C:\Users\can\AndroidStudioProjects\MHWorldDatabase\dummy_data_provider\dummy_data_provider.iml" />
       <module fileurl="file://D:\Users\can\AndroidStudioProjects\MonsterHunterWorldDatabase\dummy_data_provider\dummydataprovider.iml" filepath="D:\Users\can\AndroidStudioProjects\MonsterHunterWorldDatabase\dummy_data_provider\dummydataprovider.iml" />
     </modules>
   </component>

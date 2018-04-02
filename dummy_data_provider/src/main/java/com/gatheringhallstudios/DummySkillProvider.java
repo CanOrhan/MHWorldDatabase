@@ -52,4 +52,6 @@ public class DummySkillProvider implements SkillDataProvider {
         Skill skill = new Skill("Attack Boost", skillLevels);
         return Collections.singletonList(skill);
     }
+
+
 }

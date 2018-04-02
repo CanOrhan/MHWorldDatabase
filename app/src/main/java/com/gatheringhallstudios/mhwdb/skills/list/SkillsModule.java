@@ -11,7 +11,7 @@ import dagger.Provides;
 @Module
 public abstract class SkillsModule {
 
-    @Provides
+    @Provides //ToDo: Inject the router instead of the activity
     static SkillsListAdapter provideSkillsListAdapter(MainActivity mainActivity) {
         return new SkillsListAdapter(mainActivity.getRouter());
     }

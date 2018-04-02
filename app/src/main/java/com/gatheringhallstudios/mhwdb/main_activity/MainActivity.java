@@ -6,12 +6,14 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.FrameLayout;
 
 import com.bluelinelabs.conductor.Conductor;
 import com.bluelinelabs.conductor.Router;
 import com.bluelinelabs.conductor.RouterTransaction;
 import com.gatheringhallstudios.mhwdb.R;
+import com.gatheringhallstudios.mhwdb.monsters.list.MonstersListController;
 import com.gatheringhallstudios.mhwdb.skills.list.SkillsController;
 
 import butterknife.BindView;
@@ -48,6 +50,26 @@ public class MainActivity extends AppCompatActivity {
         if (!router.hasRootController()) {
             router.setRoot(RouterTransaction.with(new SkillsController()));
         }
+
+        setupNavigationDrawer();
+    }
+
+    private void setupNavigationDrawer() {
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.main_menu_skills :
+                        router.setRoot(RouterTransaction.with(new SkillsController()));
+                        return true;
+                    case R.id.main_menu_monsters:
+                        router.setRoot(RouterTransaction.with(new MonstersListController()));
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
     }
 
     @Override
